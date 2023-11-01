@@ -12,7 +12,7 @@ const store = useCartStore()
   <Header />
 
   <main class="container-xl mt-5">
-    <h2 class="text-center">Nuestra Colección</h2>
+    <h2 class="text-center">Our Collection</h2>
 
     <div class="row mt-5">
       <GuitarCard v-for="guitar in store.guitars" :key="guitar.id" :guitar="guitar" />
@@ -21,4 +21,3 @@ const store = useCartStore()
 
   <Footer />
 </template>
-@/interfaces

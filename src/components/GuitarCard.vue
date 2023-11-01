@@ -23,11 +23,10 @@ defineProps<{ guitar: Guitar }>()
       </p>
       <p class="fw-black text-primary fs-3">${{ guitar.price }}</p>
       <button type="button" class="btn btn-dark w-100" @click="store.handleAddToCart(guitar)">
-        Agregar al Carrito
+        Add to Cart
       </button>
     </div>
   </div>
 </template>
 
 <style scoped></style>
-@/interfaces

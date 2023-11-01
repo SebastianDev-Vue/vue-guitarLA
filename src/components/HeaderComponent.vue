@@ -18,16 +18,16 @@ const store = useCartStore()
             <img class="img-fluid" src="/img/carrito.png" alt="imagen carrito" />
 
             <div id="carrito" class="bg-white p-3">
-              <p v-if="store.cart.length === 0" class="text-center m-0">El carrito esta vacio</p>
+              <p v-if="store.cart.length === 0" class="text-center m-0">Cart is Empty</p>
 
               <template v-else>
                 <table class="w-100 table">
                   <thead>
                     <tr>
-                      <th>Imagen</th>
-                      <th>Nombre</th>
-                      <th>Precio</th>
-                      <th>Cantidad</th>
+                      <th>Image</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
                       <th></th>
                     </tr>
                   </thead>
@@ -73,10 +73,10 @@ const store = useCartStore()
                 </table>
 
                 <p class="text-end">
-                  Total pagar: <span class="fw-bold">${{ store.totalToPay }}</span>
+                  Total: <span class="fw-bold">${{ store.totalToPay }}</span>
                 </p>
                 <button class="btn btn-dark w-100 mt-3 p-2" @click="store.emptyCart">
-                  Vaciar Carrito
+                  Empty Cart
                 </button>
               </template>
             </div>
@@ -97,7 +97,7 @@ const store = useCartStore()
             class="btn fs-4 bg-primary text-white py-2 px-5"
             @click="store.handleAddToCart(store.guitar)"
           >
-            Agregar al Carrito
+            Add to Cart
           </button>
         </div>
       </div>
